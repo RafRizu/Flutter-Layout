@@ -9,7 +9,7 @@ import 'package:flutter_kelompok/gridcat.dart';
 import 'app_bar.dart';
 
 class MainPage extends StatefulWidget {
-  MainPage({super.key});
+  const MainPage({super.key});
   @override
   State<MainPage> createState() => _MainPageState();
 }

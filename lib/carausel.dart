@@ -20,7 +20,7 @@ class _CarouselDekState extends State<CarouselDek> {
         autoPlay: true,
         autoPlayInterval: const Duration(seconds: 2),
         // autoPlayAnimationDuration: Duration(milliseconds: 20000),
-        autoPlayAnimationDuration: Duration(milliseconds: 200),
+        autoPlayAnimationDuration: const Duration(milliseconds: 200),
         pauseAutoPlayOnTouch: true,
         // pauseAutoPlayInFiniteScroll: true,
         // pauseAutoPlayOnManualNavigate: true,
@@ -42,9 +42,9 @@ class _CarouselDekState extends State<CarouselDek> {
             
             Container(
               width: screenWidths,
-              padding: EdgeInsets.symmetric(horizontal: 18.0),
+              padding: const EdgeInsets.symmetric(horizontal: 18.0),
               // margin: EdgeInsets.symmetric(horizontal: 10.0),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 borderRadius: BorderRadius.all(
                   Radius.circular(90.0),
                   
@@ -53,9 +53,9 @@ class _CarouselDekState extends State<CarouselDek> {
               ),
               child: 
                 ClipRRect(
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
+                  borderRadius: const BorderRadius.all(Radius.circular(8.0)),
                   child: Image.asset(
-                    '$i',
+                    i,
                     fit: BoxFit.fill,
                     
                   ),

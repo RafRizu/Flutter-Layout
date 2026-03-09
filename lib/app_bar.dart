@@ -6,6 +6,8 @@ import 'soon.dart';
 void main() => runApp(MaterialApp(home: BottomNavBar()));
 
 class BottomNavBar extends StatefulWidget {
+  const BottomNavBar({super.key});
+
   @override
   _BottomNavBarState createState() => _BottomNavBarState();
 }
@@ -13,14 +15,14 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   int _page = 2;
   List pageList = [
-    Soon(),
-    Soon(),
+    const Soon(),
+    const Soon(),
     MainPage(),
-    Soon(),
-    Soon(),
+    const Soon(),
+    const Soon(),
 
   ];
-  GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
+  final GlobalKey<CurvedNavigationBarState> _bottomNavigationKey = GlobalKey();
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
         key: _bottomNavigationKey,
         index: 2,
         height: 60.0,
-        items: <Widget>[
+        items: const <Widget>[
           Icon(
             Icons.newspaper,
             size: 30,
@@ -57,11 +59,11 @@ class _BottomNavBarState extends State<BottomNavBar> {
             color: Colors.white,
           ),
         ],
-        color: Color.fromARGB(255, 182, 0, 0),
-        buttonBackgroundColor: Color.fromARGB(255, 0, 0, 0),
+        color: const Color.fromARGB(255, 182, 0, 0),
+        buttonBackgroundColor: const Color.fromARGB(255, 0, 0, 0),
         backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         animationCurve: Curves.easeInOut,
-        animationDuration: Duration(milliseconds: 300),
+        animationDuration: const Duration(milliseconds: 300),
         onTap: (index) {
           setState(() {
             _page = index;

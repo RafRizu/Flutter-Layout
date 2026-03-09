@@ -11,7 +11,7 @@ class ClockWidget extends StatelessWidget {
       builder: (context, snapshot) {
         return Text(
           DateFormat('hh:mm').format(DateTime.now()),
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 18,
             fontWeight: FontWeight.bold,
@@ -31,7 +31,7 @@ class ClockWidgetDay extends StatelessWidget {
       builder: (context, snapshot) {
         return Text(
           DateFormat('EEEE, dd MMMM yyyy').format(DateTime.now()),
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
 

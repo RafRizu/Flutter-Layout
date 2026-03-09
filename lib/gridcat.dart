@@ -17,14 +17,14 @@ class GridCat extends StatelessWidget {
     ];
 
     List<Icon> catIcon = [
-      Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
-      Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
-      Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
-      Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
-      Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
-      Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
-      Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
-      Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
+      const Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
+      const Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
+      const Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
+      const Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
+      const Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
+      const Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
+      const Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
+      const Icon(Icons.access_alarm_outlined, color: Colors.white, size: 20,),
     ];
 
     return Column(
@@ -32,8 +32,8 @@ class GridCat extends StatelessWidget {
         GridView.builder(
             itemCount: catNames.length,
             shrinkWrap: true,
-            physics: NeverScrollableScrollPhysics(),
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            physics: const NeverScrollableScrollPhysics(),
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
               crossAxisCount: 4,
               childAspectRatio: 1 / 1,
             ),
@@ -43,14 +43,14 @@ class GridCat extends StatelessWidget {
                   Container(
                     height: 50,
                     width: 50,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.red,
                       shape: BoxShape.rectangle,
                     ),
                     child: Center(child: catIcon[index],),
                   ),
-                  SizedBox(height: 10,),
-                  Text(catNames[index],style: TextStyle(color: Colors.black),),
+                  const SizedBox(height: 10,),
+                  Text(catNames[index],style: const TextStyle(color: Colors.black),),
                 ],
               );
             })
