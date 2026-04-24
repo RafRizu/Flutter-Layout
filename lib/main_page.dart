@@ -291,7 +291,7 @@ class _MainPageState extends State<MainPage> {
                           boxShadow: [
                             BoxShadow(
                               color:
-                                  Colors.grey.withOpacity(0.3), //color of shadow
+                                  Colors.grey.withValues(alpha: 0.3), //color of shadow
                               spreadRadius: 0, //spread radius
                               blurRadius: 0, // blur radius
                               offset: Offset(5, 6), // changes position of shadow
